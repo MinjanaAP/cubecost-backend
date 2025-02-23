@@ -4,7 +4,11 @@ from joblib import load
 import pandas as pd
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={r"/*": {"origins": "*"}})
+
+@app.route("/")
+def home():
+    return "Server is running!"
 
 # Load the trained model
 MODEL_FILE = "random_forest_model.joblib"
