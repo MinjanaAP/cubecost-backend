@@ -11,6 +11,8 @@ transformers>=4.26.0  # For Hugging Face models (if used)
 # Web framework (if needed)
 flask>=2.2.0  # Replace with FastAPI if preferred
 gunicorn>=20.1.0  # Required for deployment on Render
+flask_cors>=3.0.10
+
 
 # Optimization & Misc (remove if not used)
 uvicorn>=0.20.0  # For ASGI servers (FastAPI, optional)
